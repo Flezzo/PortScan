@@ -5,7 +5,7 @@ import os
 clear = lambda: os.system('clear')
 
 
-def fanc1():
+def func1():
     clear()
     ui()
     
@@ -35,7 +35,7 @@ def fanc1():
     exit = colored("[ENTER]", 'green')
     text_a = input(again + ' - Scan another host / сканировать другой хост\n' + home + ' - Back to menu / вернуться в меню\n' + exit + ' - Leave / выйти: ')
     if text_a == '1':
-    	fanc1()
+    	func1()
     elif text_a == '2':
     	clear()
     	homee()
@@ -43,7 +43,7 @@ def fanc1():
     	pass
 
 
-def fanc2():
+def func2():
     clear()
     ui()
     
@@ -71,7 +71,7 @@ def fanc2():
     exit = colored("[ENTER]", 'green')
     text_a = input(again + ' - Scan another host / сканировать другой хост\n' + home + ' - Back to menu / вернуться в меню\n' + exit + ' - Leave / выйти: ')
     if text_a == '1':
-    	fanc2()
+    	func2()
     elif text_a == '2':
     	clear()
     	homee()
@@ -128,9 +128,9 @@ def home():
 	text_a = input("[scan]--> ")
 	
 	if text_a == "1":
-	    fanc1()
+	    func1()
 	elif text_a == "2":
-	    fanc2()
+	    func2()
 	elif text_a == "3":
 		help()
 	elif text_a == "4":
